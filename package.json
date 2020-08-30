@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test:leak": "node --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage test/memoryLeak",
+    "test:noLeak": "node --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage test/noMemoryLeak"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
